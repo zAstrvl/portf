@@ -1,15 +1,33 @@
-import {Github, ArrowRight} from "lucide-react";
+import {Github} from "lucide-react";
 
 const projects = [
     {
         id: 1,
         title: "Stok Takip",
-        description: "PyQt5 ile tasarlanmış basit bir stok takip programı.",
+        description: "PyQt ile tasarlanmış stok takip programı.",
         image: "/projects/proje1.png",
         tags: ["Python", "PyQt5", "SQLite"],
         demoUrl: "#",
         githubUrl: "https://github.com/zAstrvl/basit-stok-takip"
     },
+    {
+        id: 2,
+        title: "Not Defteri",
+        description: "Not defterine alternatif bir uygulama.",
+        image: "/projects/proje2.png",
+        tags: ["Python", "PyQt5"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/zAstrvl/not-defteri"
+    },
+    {
+        id: 3,
+        title: "Kişisel Portfolyo Sitesi",
+        description: "Kendi kişisel portfolyo sitem.",
+        image: "/projects/proje3.png",
+        tags: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "#",
+        githubUrl: "https://github.com/zAstrvl/portf"
+    }
 ]
 
 export const ProjectSection = () => {
@@ -20,7 +38,7 @@ export const ProjectSection = () => {
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                Projelerim sdfadsgasdgfdsafsdfasdfasdfdas
+                Bazı geliştirdiğim projeler
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -50,11 +68,6 @@ export const ProjectSection = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="text-center mt-12">
-                <a className="cosmic-button w-fit flex items-center mx-auto">
-                    Hesaplarım <ArrowRight size={16} />
-                </a>
             </div>
         </div>
     </section>

@@ -1,4 +1,4 @@
-import {Briefcase, Code, User} from "lucide-react";
+import {Cpu, Code, Palette} from "lucide-react";
 
 
 export const About = () => {
@@ -10,14 +10,14 @@ export const About = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">Hevesli Bilgisayar Mühendisi Adayı</h3>
+                    <h3 className="text-2xl font-semibold">Yapay Zeka Araştırmacısı</h3>
 
                     <p className="text-muted-foreground">
-                        AGFGFDGDSFGSDFGSDFGSDFGSDFGSDFGSDFGSFD (Tecrübe)
+                        Ben Eren Arslan. Balıkesir Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim. Çocukluğumdan beri bilgisayarlara ilgiliydim. Bilgisayar oyunları, çok az insanın bildiği farklı mobil uygulamalar ve bilgisayar ortamında tasarımlara hep ilgi duydum.
                     </p>
 
                     <p className="text-muted-foreground">
-                        DSAdsfSDFASFASDFDSDASDFDsafDAFdasfSDFasd (Yaptıklarım)
+                        Şu anda bölümümüzdeki Yapay Zeka Takımı'nda çalışıyorum. Burada takım arkadaşlarımla birlikte araştırmalar yapıyorum. Text-to-Speech alanında hazır modeller kullanarak veya kendi eğittiğimiz modellerle çalışmalarda bulunuyoruz.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -25,23 +25,18 @@ export const About = () => {
                             {" "}
                             İletişime Geçin
                         </a>
-                        <a href=""
-                           className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-                            {" "}
-                            CV
-                        </a>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-6">
                     <div className="gradient-border p-6 card-hover bg-card">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Code className="h-6 w-6 text-primary" />
+                                <Cpu className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> Web Geliştirme</h4>
+                                <h4 className="font-semibold text-lg"> Yapay Zeka</h4>
                                 <p className="text-muted-foreground">
-                                    CfDFdsafDSACdcsdsdsasdcvDASFDSA (İcraatler)
+                                    Makine öğrenmesi ile yazıyı sese çevirmek veya sesi yazıya çevirmek.
                                 </p>
                             </div>
                         </div>
@@ -49,12 +44,12 @@ export const About = () => {
                     <div className="gradient-border p-6 card-hover bg-card">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary" />
+                                    <Code className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Tasarım</h4>
+                                    <h4 className="font-semibold text-lg"> İnternet Programlama</h4>
                                     <p className="text-muted-foreground">
-                                        CfDFdsafDSACdcsdsdsasdcvDASFDSA (Tasarımı)
+                                        HTML-CSS-JS ve bazı kütüphaneleri kullanarak web siteleri geliştirmek.
                                     </p>
                                 </div>
                             </div>
@@ -62,12 +57,12 @@ export const About = () => {
                     <div className="gradient-border p-6 card-hover bg-card">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary" />
+                                    <Palette className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Proje Yönetimi</h4>
+                                    <h4 className="font-semibold text-lg"> Görsel Programlama</h4>
                                     <p className="text-muted-foreground">
-                                        CfDFdsafDSACdcsdsdsasdcvDASFDSA (Hakkında)
+                                        Günlük hayatta kullanılan programların arayüzünü son kullanıcıya uygun bir halde tasarlayıp sunmak.
                                     </p>
                                 </div>
                             </div>

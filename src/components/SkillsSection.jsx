@@ -1,28 +1,28 @@
 import {useState} from "react";
 import {cn} from "@/lib/utils"
 const skills = [
-    {name: "HTML/CSS", level:95, category: "frontend"},
-    {name: "JavaScript", level:95, category: "frontend"},
-    {name: "React", level:95, category: "frontend"},
-    {name: "SQL", level:95, category: "backend"},
-    {name: "GitHub", level:95, category: "araçlar"},
-    {name: "VSCode", level:95, category: "araçlar"},
-    {name: "WebStorm", level:95, category: "araçlar"},
-    {name: "Python", level:95, category: "dil"},
-    {name: "C#", level:95, category: "dil"},
-    {name: "Java", level:95, category: "dil"},
+    {name: "HTML/CSS", level:90, category: "frontend"},
+    {name: "JavaScript", level:90, category: "frontend"},
+    {name: "React", level:85, category: "frontend"},
+    {name: "SQLite", level:70, category: "backend"},
+    {name: "GitHub", level:90, category: "araçlar"},
+    {name: "VSCode", level:90, category: "araçlar"},
+    {name: "WebStorm", level:80, category: "araçlar"},
+    {name: "Python", level:75, category: "dil"},
+    {name: "C#", level:65, category: "dil"},
+    {name: "Java", level:50, category: "dil"},
 ]
 
 const categories = ["hepsi", "frontend", "backend", "araçlar", "dil"]
 
 export const SkillsSection = () => {
-    const [activeCategory, setActiveCategory] = useState("all")
+    const [activeCategory, setActiveCategory] = useState("hepsi")
     const filteredSkills = skills.filter((skill) => activeCategory === "hepsi" || skill.category === activeCategory)
     return (
         <section id="skills" className="py-24 px-4 relative bg-secondary/30">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Ne <span className="text-primary"> Yapabilirim?</span>
+                <span className="text-primary">Yeteneklerim</span>
             </h2>
             <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {categories.map((category, key) => (
